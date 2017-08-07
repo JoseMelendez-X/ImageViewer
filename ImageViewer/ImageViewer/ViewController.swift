@@ -9,11 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Array of pictures
+    
+    var pictures = [String]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Create a File Manager object. The File Manager is used to create, copy, and move files and directories
+        
+        let fm = FileManager.default
+        
+        //The location of where you can find the Images
+        
+        let path = Bundle.main.resourcePath!
+        
+        let items = try! fm.contentsOfDirectory(atPath: path)
+        
+        for item in items {
+            
+            if item.hasPrefix("nssl") {
+                
+                //append the image to the array of pictures
+                
+                pictures.append(item)
+                
+            }
+        }
+        
+     print(pictures)
+        
     }
-
 }
 
