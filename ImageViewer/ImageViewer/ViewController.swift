@@ -39,8 +39,46 @@ class ViewController: UITableViewController {
             }
         }
         
-     print(pictures)
+    }
+    
+    
+    //The 2 required tableView functions
+    
+    //How many rows should appear?
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+       return pictures.count
         
     }
+    
+    //What Each row should look like
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        
+        cell.textLabel?.text = pictures[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Try loading the "Detail" view controller and typecasting it as DetailViewController
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            
+            //Success, set it's selectedImage property
+            
+            vc.selectedImage = pictures[indexPath.row]
+    
+        
+        //Now push it onto the navigation controller
+        navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
+
 }
 

@@ -22,6 +22,7 @@
 		594F8E291F37F65E00EBA87F /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594F8E1F1F37F65E00EBA87F /* nssl0049.jpg */; };
 		594F8E2A1F37F65E00EBA87F /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594F8E201F37F65E00EBA87F /* nssl0051.jpg */; };
 		594F8E2B1F37F65E00EBA87F /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594F8E211F37F65E00EBA87F /* nssl0091.jpg */; };
+		594F8E2D1F38E87700EBA87F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F8E2C1F38E87700EBA87F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		594F8E1F1F37F65E00EBA87F /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		594F8E201F37F65E00EBA87F /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		594F8E211F37F65E00EBA87F /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
+		594F8E2C1F38E87700EBA87F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				594F8E051F37EDD100EBA87F /* ViewController.swift */,
+				594F8E2C1F38E87700EBA87F /* DetailViewController.swift */,
 				594F8E071F37EDD100EBA87F /* Main.storyboard */,
 			);
 			name = ViewControllers;
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594F8E2D1F38E87700EBA87F /* DetailViewController.swift in Sources */,
 				594F8E061F37EDD100EBA87F /* ViewController.swift in Sources */,
 				594F8E041F37EDD100EBA87F /* AppDelegate.swift in Sources */,
 			);
