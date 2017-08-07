@@ -30,7 +30,7 @@ class ViewController: UITableViewController {
         
         for item in items {
             
-            if item.hasPrefix("nssl") {
+            if item.hasPrefix("image") {
                 
                 //append the image to the array of pictures
                 
